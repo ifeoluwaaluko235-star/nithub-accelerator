@@ -89,6 +89,7 @@ button {
 #myH1 {
     font-size: 40px;
     font-weight: 800;
+    white-space: nowrap;
     margin-bottom: -20px;
     color: #015723;
 }
@@ -96,6 +97,7 @@ button {
 #myP {
     font-size: 32px;
     font-weight: 500;
+    white-space: nowrap;
     color: #8ABB29;
     margin-bottom: 20px;
 }
@@ -111,9 +113,11 @@ button {
 
 .img1 {
     max-width: 100%;
-    /* height: auto; */
-    /* display: block; */
-    /* margin: 0 auto; */
+    height: auto;
+    
+    display: block;
+    margin: 0 auto;
+   
 }
 
 /* ---------- About / What you'll get ---------- */
@@ -177,6 +181,7 @@ button {
     border: 1px solid #C3D8CC;
     padding: 16px;
     border-radius: 8px;
+    
 }
 
 .myH4A {
