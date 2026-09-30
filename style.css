@@ -1,0 +1,539 @@
+/* ==========================================================
+   Nithub Accelerator landing page
+   Responsive: desktop (default) > 1024px, tablet <= 1024px / <= 768px,
+   phone <= 480px.
+   --pad is the left/right page gutter. It shrinks at each breakpoint.
+   ========================================================== */
+
+:root {
+    --pad: 70px;
+    --content-width: calc(100% - (var(--pad) * 2));
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Navigation ---------- */
+.navBar {
+    display: flex;
+    align-items: center;
+    height: 66px;
+    font-family: "inter", Impact;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 60%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+#logo {
+    margin-left: var(--pad);
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+    gap: 30px;
+}
+
+button {
+    margin-left: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 13px 20px;
+    background-color: #015723;
+    border-radius: 7px;
+    border: none;
+    margin-right: var(--pad);
+}
+
+/* ---------- Hero ---------- */
+.container {
+    font-family: "montserrat", Impact;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: var(--content-width);
+    max-width: 1120px;
+    margin-left: var(--pad);
+    margin-top: 7rem;
+}
+
+/* .container div.img1 {
+    flex: 1 1 50%;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container div.img1 img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    display: block;
+} */
+
+#myH1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: -20px;
+    color: #015723;
+}
+
+#myP {
+    font-size: 32px;
+    font-weight: 500;
+    color: #8ABB29;
+    margin-bottom: 20px;
+}
+
+#myP1 {
+    font-size: 18px;
+    line-height: 135%;
+}
+
+#btn2 {
+    margin: auto;
+}
+
+.img1 {
+    max-width: 100%;
+    /* height: auto; */
+    /* display: block; */
+    /* margin: 0 auto; */
+}
+
+/* ---------- About / What you'll get ---------- */
+.textContent1 {
+    width: var(--content-width);
+    max-width: 1120px;
+    margin-left: var(--pad);
+    margin-top: 25px;
+    font-family: "inter", Impact;
+}
+
+.textContent2 {
+    width: var(--content-width);
+    max-width: 1120px;
+    margin-left: var(--pad);
+    margin-top: 68px;
+    font-family: "inter", Impact;
+}
+
+.myP2 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "inter", Impact;
+}
+
+#myP3 {
+    font-size: 16px;
+    font-family: "inter", Impact;
+}
+
+#myH2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: auto;
+    color: black;
+}
+
+/* ---------- Feature boxes ---------- */
+/* The grid picks the number of columns itself: 3 on desktop,
+   2 on tablets, 1 on phones. Each box is at least 260px wide. */
+.boxContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+    gap: 35px 40px;
+    margin-left: var(--pad);
+    margin-top: 45px;
+    width: var(--content-width);
+    max-width: 1120px;
+}
+
+/* Rows A and B are flattened so all six boxes share one grid */
+.boxContainerA,
+.boxContainerB {
+    display: contents;
+}
+
+.boxes {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 138px;
+    border: 1px solid #C3D8CC;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.myH4A {
+    margin: auto;
+    color: #015723;
+}
+
+.myH4B {
+    margin: auto;
+    color: #8ABB29;
+}
+
+.myP4 {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* ---------- Who should apply ---------- */
+.liableApplicants {
+    margin-left: var(--pad);
+    width: var(--content-width);
+    max-width: 1120px;
+    margin-top: 68px;
+    margin-bottom: 68px;
+}
+
+.liableApplicants ul {
+    margin-left: -15px;
+    margin-top: -8px;
+    font-size: 20px;
+}
+
+/* ---------- Timeline ---------- */
+.TimelineContainer {
+    margin-left: var(--pad);
+    width: var(--content-width);
+    max-width: 1120px;
+    margin-bottom: 50px;
+}
+
+.Timeline {
+    border-left: 2px solid #C3D8CC;
+    margin-left: 20px;
+    padding-left: 25px;
+}
+
+.Items {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.TimelineIcon {
+    position: absolute;
+    left: -40px;
+    background: rgb(252, 252, 252);
+    border: 2px solid white;
+}
+
+.timelineContent {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+span {
+    color: #015723;
+    font-weight: 400;
+}
+
+.img2 {
+    display: block;
+    margin-left: var(--pad);
+    max-width: var(--content-width);
+    height: auto;
+}
+
+/* ---------- Footer ---------- */
+.footerContainer {
+    margin-left: var(--pad);
+    margin-top: 68px;
+    width: var(--content-width);
+    max-width: 1120px;
+    padding-bottom: 24px;
+    font-family: "montserrat", Impact;
+}
+
+.footerItems {
+    display: flex;
+    gap: 12rem;
+    margin-top: 2rem;
+}
+
+.contentHeadings {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contentIcons {
+    margin-right: 10px;
+}
+
+.contentBody {
+    font-size: 16px;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+}
+
+.Copyright {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+
+/* ==========================================================
+   TABLET (landscape and small laptops): 1024px and below
+   ========================================================== */
+@media (max-width: 1024px) {
+    :root {
+        --pad: 40px;
+    }
+
+    .footerItems {
+        gap: 4rem;
+    }
+
+    .boxContainer {
+        gap: 20px;
+    }
+
+    .boxes {
+        min-height: 0;
+    }
+}
+
+
+/* ==========================================================
+   TABLET (portrait): 768px and below
+   ========================================================== */
+@media (max-width: 768px) {
+    :root {
+        --pad: 32px;
+    }
+
+    /* Nav */
+    nav ul {
+        gap: 20px;
+        padding-left: 0;
+    }
+
+    button {
+        margin-left: 20px;
+    }
+
+    /* Hero: stack text above image */
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 6rem;
+    }
+
+    .container .textContent {
+        width: 100%;
+    }
+
+    .container .img1 {
+        width: 100%;
+    }
+
+    .container .img1 img,
+    img.img1 {
+        max-width: 440px;
+        width: 100%;
+    }
+
+    #btn2 {
+        margin: 0;
+    }
+
+    /* Let paragraphs wrap naturally instead of at hard <br> breaks */
+    #myP1 br,
+    #myP3 br {
+        display: none;
+    }
+
+    #myH1 {
+        font-size: 34px;
+        margin-bottom: 8px;
+    }
+
+    #myP {
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+    #myP1 {
+        font-size: 17px;
+    }
+
+    #myH2 {
+        font-size: 30px;
+    }
+
+    .textContent2 {
+        margin-top: 48px;
+    }
+
+    .liableApplicants {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .liableApplicants ul {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    .footerItems {
+        flex-wrap: wrap;
+        gap: 2rem 3rem;
+    }
+
+    .Copyright {
+        font-size: 16px;
+        margin-top: 2.5rem;
+    }
+}
+
+
+/* ==========================================================
+   PHONE: 480px and below
+   ========================================================== */
+@media (max-width: 480px) {
+    :root {
+        --pad: 20px;
+    }
+
+    /* Nav: compact so logo, links and button all fit on one row */
+    .navBar {
+        height: 60px;
+    }
+
+    #logo img {
+        display: block;
+        height: 30px;
+        width: auto;
+    }
+
+    nav ul {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    button {
+        margin-left: 12px;
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    /* Hero */
+    .container {
+        margin-top: 5rem;
+        gap: 20px;
+    }
+
+    #myH1 {
+        font-size: 28px;
+    }
+
+    #myP {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    #myP1 {
+        font-size: 15px;
+    }
+
+    #btn2 {
+        padding: 12px 22px;
+    }
+
+    /* About / features */
+    .textContent1 {
+        margin-top: 16px;
+    }
+
+    .textContent2 {
+        margin-top: 36px;
+    }
+
+    .myP2 {
+        font-size: 20px;
+    }
+
+    #myP3 {
+        font-size: 15px;
+    }
+
+    #myH2 {
+        font-size: 24px;
+    }
+
+    /* Boxes: the grid drops to a single column on its own */
+    .boxContainer {
+        gap: 16px;
+        margin-top: 30px;
+    }
+
+    /* Who should apply */
+    .liableApplicants {
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    .liableApplicants ul {
+        font-size: 16px;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .liableApplicants li {
+        margin-bottom: 8px;
+    }
+
+    /* Timeline */
+    .Timeline {
+        margin-left: 16px;
+        padding-left: 24px;
+    }
+
+    .timelineContent {
+        font-size: 15px;
+    }
+
+    /* Footer */
+    .footerContainer {
+        margin-top: 40px;
+    }
+
+    .footerItems {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .contentHeadings {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .contentBody {
+        font-size: 15px;
+    }
+
+    .Copyright {
+        font-size: 13px;
+        margin-top: 2rem;
+    }
+}
